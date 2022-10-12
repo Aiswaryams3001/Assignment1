@@ -10,7 +10,7 @@ namespace Assignment1
     {
         static void Main(string[] args)
         {
-            int n, sum = 0;
+            int n;
             Console.WriteLine("n:");
             n = Convert.ToInt32(Console.ReadLine());
             for(int i=n;i>=1;i--)
@@ -21,12 +21,10 @@ namespace Assignment1
                 }
                 for (int k=1;k<(i*2);k++)
                 {
-                    Console.Write("*");
-                    sum = sum + 1;    
+                    Console.Write("*");  
                 }
                 Console.WriteLine("\n");
             }
-            Console.WriteLine("The sum of the pyramid is:" + sum.ToString());
             Console.ReadLine();
         }
     }
