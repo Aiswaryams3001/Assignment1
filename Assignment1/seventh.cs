@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,21 +12,21 @@ namespace Assignment1
     {
         static void Main(string[] args)
         {
-            int n, sum = 0;
+            int n,sum=0;
             Console.WriteLine("n:");
-            n = Convert.ToInt32(Console.ReadLine());
-            for(int i=n;i>=1;i--)
+            n=Convert.ToInt32(Console.ReadLine());
+            for(int i=0; i <= n; i++)
             {
-                for(int j=n;j>i;j--)
+                for(int j=1; j <=n-i; j++)
                 {
-                    Console.Write(" ");   
+                    Console.Write(" ");
                 }
-                for (int k=1;k<(i*2);k++)
+                for(int j=1; j <=2*i-1; j++)
                 {
                     Console.Write("*");
-                    sum = sum + 1;    
+                    sum = sum + 1;
                 }
-                Console.WriteLine("\n");
+                Console.Write("\n");
             }
             Console.WriteLine("The sum of the pyramid is:" + sum.ToString());
             Console.ReadLine();

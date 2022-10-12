@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,20 +14,13 @@ namespace Assignment1
             int n,sum=0;
             Console.WriteLine("n:");
             n=Convert.ToInt32(Console.ReadLine());
-            for(int i=0; i <= n; i++)
+            Console.WriteLine("odd numbers are:");
+            for(int i=1; i<=n; i=i+2)
             {
-                for(int j=1; j <=n-i; j++)
-                {
-                    Console.Write(" ");
-                }
-                for(int j=1; j <=2*i-1; j++)
-                {
-                    Console.Write("*");
-                    sum = sum + 1;
-                }
-                Console.Write("\n");
+                Console.WriteLine(i);
+                sum=sum+i;  
             }
-            Console.WriteLine("The sum of the pyramid is:" + sum.ToString());
+            Console.WriteLine("The sum of the "+ n +" terms of odd natural numbers is: "+  sum);
             Console.ReadLine();
         }
     }

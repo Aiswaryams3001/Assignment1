@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Assignment1.seventh</StartupObject>
+    <StartupObject>Assignment1.sixth</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,12 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="eighth.cs" />
+    <Compile Include="nineth.cs" />
     <Compile Include="fifth.cs" />
     <Compile Include="fourth.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="second.cs" />
+    <Compile Include="eighth.cs" />
     <Compile Include="seventh.cs" />
     <Compile Include="sixth.cs" />
     <Compile Include="Third.cs" />
