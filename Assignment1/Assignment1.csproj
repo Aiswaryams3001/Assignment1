@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Assignment1.nineth</StartupObject>
+    <StartupObject>Assignment1.first</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="first.cs" />
+    <Compile Include="ten.cs" />
     <Compile Include="nineth.cs" />
     <Compile Include="fifth.cs" />
     <Compile Include="fourth.cs" />
